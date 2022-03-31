@@ -1,0 +1,30 @@
+*{
+    margin: 10;
+    
+}
+
+.container-principal{
+    background-color:#FFFFFF;
+
+}
+
+ul{
+    color: black;
+    }
+b{
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content:center;
+}
+
+.title{
+    color:"#FFFFFF";
+    font:"arial";
+    text-align:"center";
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
