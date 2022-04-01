@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220112 09:53:25.984" rpa="false" schemaversion="2">
+<suite id="s1" name="InicioSesionIncorrecto" source="C:\xampp\htdocs\v2.0.1\acciones\ReponerYA\InicioSesion\IniciodeSesionIncorrecto\InicioSesionIncorrecto.robot">
+<test id="s1-t1" name="Ingresar a la pagina a probar">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${pagina}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220112 09:53:26.501" level="INFO">Opening browser 'Chrome' to base url 'https://reponerya.com.uy/login'.</msg>
+<status status="PASS" starttime="20220112 09:53:26.501" endtime="20220112 09:53:30.714"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220112 09:53:33.724" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220112 09:53:30.715" endtime="20220112 09:53:33.725"/>
+</kw>
+<status status="PASS" starttime="20220112 09:53:26.500" endtime="20220112 09:53:33.725"/>
+</test>
+<test id="s1-t2" name="Escribir Usuario">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=input-36</arg>
+<arg>${Usuario}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220112 09:53:33.728" level="INFO">Typing text 'barbarareponera@gmail.com' into text field 'id=input-36'.</msg>
+<status status="PASS" starttime="20220112 09:53:33.727" endtime="20220112 09:53:34.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220112 09:53:35.122" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220112 09:53:34.108" endtime="20220112 09:53:35.122"/>
+</kw>
+<status status="PASS" starttime="20220112 09:53:33.726" endtime="20220112 09:53:35.123"/>
+</test>
+<test id="s1-t3" name="Escribir Contrasena">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="input-40"]</arg>
+<arg>${Contrasena}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220112 09:53:35.125" level="INFO">Typing text 'Pwst12345' into text field 'xpath://*[@id="input-40"]'.</msg>
+<status status="PASS" starttime="20220112 09:53:35.124" endtime="20220112 09:53:35.296"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220112 09:53:36.306" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220112 09:53:35.296" endtime="20220112 09:53:36.306"/>
+</kw>
+<status status="PASS" starttime="20220112 09:53:35.123" endtime="20220112 09:53:36.306"/>
+</test>
+<test id="s1-t4" name="Click en Ingresar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${bingresar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220112 09:53:36.308" level="INFO">Clicking element 'xpath://*[@id="app"]/div/main/div/div[2]/div[3]/div[1]/form/button/span'.</msg>
+<status status="PASS" starttime="20220112 09:53:36.308" endtime="20220112 09:53:36.396"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220112 09:53:38.399" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220112 09:53:36.397" endtime="20220112 09:53:38.399"/>
+</kw>
+<status status="PASS" starttime="20220112 09:53:36.307" endtime="20220112 09:53:38.399"/>
+</test>
+<test id="s1-t5" name="Verificar el error">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Datos de sesión incorrectos</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220112 09:53:38.401" endtime="20220112 09:53:38.417"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220112 09:53:43.429" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220112 09:53:38.417" endtime="20220112 09:53:43.430"/>
+</kw>
+<status status="PASS" starttime="20220112 09:53:38.400" endtime="20220112 09:53:43.431"/>
+</test>
+<test id="s1-t6" name="Cerrar pruebas">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220112 09:53:43.434" endtime="20220112 09:53:45.657"/>
+</kw>
+<status status="PASS" starttime="20220112 09:53:43.432" endtime="20220112 09:53:45.658"/>
+</test>
+<status status="PASS" starttime="20220112 09:53:25.987" endtime="20220112 09:53:45.661"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="InicioSesionIncorrecto">InicioSesionIncorrecto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

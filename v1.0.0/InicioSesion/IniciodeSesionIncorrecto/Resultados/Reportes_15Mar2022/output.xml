@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220315 13:56:14.300" rpa="false" schemaversion="2">
+<suite id="s1" name="InicioSesionIncorrecto" source="C:\xampp\htdocs\Versiones\v2.0.7\acciones\ReponerYA\InicioSesion\IniciodeSesionIncorrecto\InicioSesionIncorrecto.robot">
+<test id="s1-t1" name="Ingresar a la pagina a probar">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${pagina}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220315 13:56:15.005" level="INFO">Opening browser 'Chrome' to base url 'https://test-reponerya.pwstasp.com.uy/login'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220315 13:56:19.708" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220315 13:56:19.707" endtime="20220315 13:56:19.708"/>
+</kw>
+<msg timestamp="20220315 13:56:19.804" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00F16903+2517251]
+	Ordinal0 [0x00EAF8E1+2095329]
+	Ordinal0 [0x00DB2848+1058888]
+	Ordinal0 [0x00DD0B9D+1182621]
+	Ordinal0 [0x00DCCA60+1165920]
+	Ordinal0 [0x00DCA2CF+1155791]
+	Ordinal0 [0x00DFAAAF+1354415]
+	Ordinal0 [0x00DFA71A+1353498]
+	Ordinal0 [0x00DF639B+1336219]
+	Ordinal0 [0x00DD27A7+1189799]
+	Ordinal0 [0x00DD3609+1193481]
+	GetHandleVerifier [0x010A5904+1577972]
+	GetHandleVerifier [0x01150B97+2279047]
+	GetHandleVerifier [0x00FA6D09+534521]
+	GetHandleVerifier [0x00FA5DB9+530601]
+	Ordinal0 [0x00EB4FF9+2117625]
+	Ordinal0 [0x00EB98A8+2136232]
+	Ordinal0 [0x00EB99E2+2136546]
+	Ordinal0 [0x00EC3541+2176321]
+	BaseThreadInitThunk [0x75C0FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C57A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C57A4E+238]
+</msg>
+<status status="FAIL" starttime="20220315 13:56:15.004" endtime="20220315 13:56:19.804"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220315 13:56:19.804" endtime="20220315 13:56:19.804"/>
+</kw>
+<status status="FAIL" starttime="20220315 13:56:15.002" endtime="20220315 13:56:19.805">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 99.0.4844.51 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00F16903+2517251]
+	Ordinal0 [0x00EAF8E1+2095329]
+	Ordinal0 [0x00DB2848+1058888]
+	Ordinal0 [0x00DD0B9D+1182621]
+	Ordinal0 [0x00DCCA60+1165920]
+	Ordinal0 [0x00DCA2CF+1155791]
+	Ordinal0 [0x00DFAAAF+1354415]
+	Ordinal0 [0x00DFA71A+1353498]
+	Ordinal0 [0x00DF639B+1336219]
+	Ordinal0 [0x00DD27A7+1189799]
+	Ordinal0 [0x00DD3609+1193481]
+	GetHandleVerifier [0x010A5904+1577972]
+	GetHandleVerifier [0x01150B97+2279047]
+	GetHandleVerifier [0x00FA6D09+534521]
+	GetHandleVerifier [0x00FA5DB9+530601]
+	Ordinal0 [0x00EB4FF9+2117625]
+	Ordinal0 [0x00EB98A8+2136232]
+	Ordinal0 [0x00EB99E2+2136546]
+	Ordinal0 [0x00EC3541+2176321]
+	BaseThreadInitThunk [0x75C0FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C57A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C57A4E+238]
+</status>
+</test>
+<test id="s1-t2" name="Escribir Usuario">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=input-36</arg>
+<arg>${Usuario}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220315 13:56:19.806" level="INFO">Typing text 'barbarareponera@gmail.com' into text field 'id=input-36'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220315 13:56:19.807" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220315 13:56:19.807" endtime="20220315 13:56:19.807"/>
+</kw>
+<msg timestamp="20220315 13:56:19.841" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220315 13:56:19.806" endtime="20220315 13:56:19.841"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220315 13:56:19.841" endtime="20220315 13:56:19.841"/>
+</kw>
+<status status="FAIL" starttime="20220315 13:56:19.805" endtime="20220315 13:56:19.842">No browser is open.</status>
+</test>
+<test id="s1-t3" name="Escribir Contrasena">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="input-40"]</arg>
+<arg>${Contrasena}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220315 13:56:19.846" level="INFO">Typing text 'Pwst12345' into text field 'xpath://*[@id="input-40"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220315 13:56:19.847" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220315 13:56:19.847" endtime="20220315 13:56:19.847"/>
+</kw>
+<msg timestamp="20220315 13:56:19.849" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220315 13:56:19.845" endtime="20220315 13:56:19.849"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220315 13:56:19.850" endtime="20220315 13:56:19.850"/>
+</kw>
+<status status="FAIL" starttime="20220315 13:56:19.844" endtime="20220315 13:56:19.850">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Click en Ingresar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${bingresar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 13:56:19.852" level="INFO">Clicking element 'xpath://*[@id="app"]/div/main/div/div[2]/div[3]/div[1]/form/button/span'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220315 13:56:19.853" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220315 13:56:19.852" endtime="20220315 13:56:19.853"/>
+</kw>
+<msg timestamp="20220315 13:56:19.873" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220315 13:56:19.852" endtime="20220315 13:56:19.873"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220315 13:56:19.874" endtime="20220315 13:56:19.874"/>
+</kw>
+<status status="FAIL" starttime="20220315 13:56:19.851" endtime="20220315 13:56:19.875">No browser is open.</status>
+</test>
+<test id="s1-t5" name="Verificar el error">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Datos de sesión incorrectos</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220315 13:56:19.881" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220315 13:56:19.881" endtime="20220315 13:56:19.881"/>
+</kw>
+<msg timestamp="20220315 13:56:19.899" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220315 13:56:19.880" endtime="20220315 13:56:19.899"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220315 13:56:19.900" endtime="20220315 13:56:19.900"/>
+</kw>
+<status status="FAIL" starttime="20220315 13:56:19.876" endtime="20220315 13:56:19.901">No browser is open.</status>
+</test>
+<test id="s1-t6" name="Cerrar pruebas">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220315 13:56:19.903" endtime="20220315 13:56:19.903"/>
+</kw>
+<status status="PASS" starttime="20220315 13:56:19.902" endtime="20220315 13:56:19.904"/>
+</test>
+<status status="FAIL" starttime="20220315 13:56:14.304" endtime="20220315 13:56:19.905"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="5" skip="0" id="s1" name="InicioSesionIncorrecto">InicioSesionIncorrecto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
