@@ -3,10 +3,14 @@
     padding:0;
 }
 
-.container-principal .titl{
+.container-principal .title{
+    color: #00ACC1;
     width: 100%;
     text-align: center;
     margin-bottom: 70px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .cards .row{
@@ -15,34 +19,26 @@
     margin-bottom: 20px;
 }
 
-.cards .titl{
-    color:"#00ACC1";
-    font-size: 25px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 20px;
-}
-
 .card{
     width: 40%;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #00ACC1;
     border-radius: 8px;
     margin-bottom: 10px;
+    box-shadow: 4px 4px;
 }
 
 .card-body{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .txt-card{
-    width: 350px;
+    width: 250px;
     margin: 0 30px;
     display: flex;
     flex-direction:column;
@@ -51,23 +47,33 @@
 }
 
 .txt-card .card-title{
-    color: "white";
+    color: #00ACC1;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .txt-card .card-info{
-    color: "#";
+    color: white;
     text-align: center;
+    margin-top: -10px;
+}
+
+.buttons{
+    position: absolute;
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn-ejecutar{
+    width: 100px;
     position: absolute;
-    background-color: #F4F0FA;
-    margin-top: 180px;
+    background-color: white;
+    margin-top: 200px;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #00ACC1;
+    color: #00ACC1;
     border-radius: 10px;
 }
 
@@ -76,19 +82,28 @@
     cursor: pointer;
 }
 
+.btn_next{
+    margin-top: 20px;
+}
+
 .btn_next, .btn_previus{
+    background-color: white;
     width: 35px;
     height: 35px;
-    border: 1px solid black;
+    padding: 5px;
+    border: 1px solid #00ACC1;
     border-radius: 30px;
-    margin: 20px 10px;
+    margin: 30px 10px;
+}
+
+
+.btn_next:hover, .btn_previus:hover{
+    background-color: #f0e9f8;
+    cursor:pointer;
 }
 
 .fa-solid{
-    font-size: 20px;
-}
-
-.fa-angle-right{
+    color: #00ACC1;
     font-size: 20px;
 }
 

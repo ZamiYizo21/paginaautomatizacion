@@ -7,7 +7,7 @@ include_once 'conexion/basededatos1.php';
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Automatizaciones</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -15,7 +15,14 @@ include_once 'conexion/basededatos1.php';
     </head>
     
     <body>
-   
+        <div class="tituloprincipal">
+      <center><h1> Automatizaciones </h1></center>
+        </div>
+         
+        <div class ="auto">
+            <h1> ¿Qué es la automatización?</h1>
+        </div>
+   <div class= "table">
     <table  width="560" cellspacing="1" cellpadding="4" border="0" bgcolor="#1E679A"  >
         <tr>
             <td class="title" >
@@ -45,7 +52,7 @@ include_once 'conexion/basededatos1.php';
         </td>
         </tr>
     </table>
-
+        </div>                 
  
     <script src="js/script.js"></script>
     </body>

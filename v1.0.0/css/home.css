@@ -8,23 +8,37 @@
 
 }
 
-ul{
-    color: black;
-    }
-b{
-    color: white;
-}
-
-body{
-    display: flex;
+.tituloprincipal{
+    color: blue;
     justify-content:center;
 }
 
-.title{
-    color:"#FFFFFF";
+.auto{
+    color: black;
+    justify-content: left;
+}
+ul{
+    color: black;
+}
+
+b{
+    color: white;
+}
+.table{
+    position:absolute;
+	padding: 10px;
+	top: 150px;
+	right: 30px;
+}
+.table .title{
+    color: black;
     font:"arial";
     text-align:"center";
     display: flex;
     justify-content: center;
+    margin-left: 50px;
+}
+h1{
+    text-align:"center";
     margin-left: 50px;
 }
